@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>login</title>
+</head>
+<body>
+    <!-- Navbar -->
+  <header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img  src="./images/logo.png.png" alt="" class="logoo-img">
+      <span class="highlight">CONSULTING<span class="highlight">SERVICES</span></span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+       <li> <a href="projects.html">Projects</a></li>
+          <li><a href="sell-Buy-lands.html">Sell-Buy-lands</a></li>
+        <li><a href="services.html" class="list-btn">Services</a></li>
+        <li><a href="login.html" class="login-btn">login</a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="hamburger-icon" onclick="toggleDropdown()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    
+    <ul class="dropdown-menu" id="dropdownMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+      <li> <a href="projects.html">Projects</a></li>
+       <li><a href="sell-Buy-lands.html">Sell-Buy-lands</a></li>
+      <li><a href="services.html" class="list-btn">Services</a></li>
+      <li><a href="login.html" class="login-btn">login</a></li>
+    </ul>
+  </div>
+</header>
+
+
+
+<div class="login-container">
+    <h1>Ryhan Kiddies World & Consulting Services</h1>
+    <form>
+      <div class="input-group">
+        <label for="username"><i class="fas fa-user"></i> Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required />
+      </div>
+      <div class="input-group">
+        <label for="password"><i class="fas fa-lock"></i> Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+      <div class="options">
+        <label><input type="checkbox" /> Remember Me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+
+
+  
+
+
+
+
+   <script src="./Js/login.js"></script>
+</body>
+</html>
