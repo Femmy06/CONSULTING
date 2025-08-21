@@ -150,80 +150,162 @@
 
 
 
-/* About */
-.about, .services, .contact {
-  padding: 40px 20px;
-  text-align: center;
-}
 
-.about h2, .services h2, .contact h2 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9f9f9;
   color: #333;
-  margin-bottom: 20px;
-  margin-top: 200px;
+  line-height: 1.6;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer */
-footer {
-  background: #333;
-  color: white;
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url("../images/consult.avif") no-repeat center/cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 15px 0;
-}
-
-.social-icons a {
   color: white;
-  margin: 0 10px;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero-text p {
   font-size: 1.2rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #87cefa;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+.about-container {
+  max-width: 900px;
+  margin: auto;
+}
+.about h2 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 1.1rem;
+  color: #555;
+}
 
-  .nav-links.active {
-    display: flex;
-  }
+/* Team Section */
+.team {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f1f5ff;
+}
+.team h2 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 40px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.team-member {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.team-member:hover {
+  transform: translateY(-8px);
+}
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.team-member h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.team-member p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+.whatsapp-btn {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.whatsapp-btn i {
+  margin-right: 5px;
+}
+.whatsapp-btn:hover {
+  background: #128c7e;
+}
 
-  .menu-icon {
-    display: block;
-  }
-
-  .service-container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Footer */
+footer {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+footer .social-icons {
+  margin-top: 15px;
+}
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+footer .social-icons a:hover {
+  color: #ffcc00;
 }
