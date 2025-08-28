@@ -9,6 +9,7 @@
   padding: 0.8rem 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 15vb;
 }
 
 .nav-container {
@@ -73,7 +74,7 @@
   font-size: 20px;
 }
 
-.hamburger-icon {
+/* .hamburger-icon {
   display: block;
   cursor: pointer;
 }
@@ -82,7 +83,7 @@
   color: black;
   font-size: 24px;
   padding: 0.4rem;
-}
+} */
 
 
 
@@ -177,8 +178,7 @@
 
 
 
-
-/* Reset default styles */
+/* 
 * {
   margin: 0;
   padding: 0;
@@ -186,7 +186,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Form container */
 form {
   max-width: 500px;
   margin: 40px auto;
@@ -197,7 +196,7 @@ form {
   margin-top: 170px;
 }
 
-/* Labels */
+
 form label {
   display: block;
   margin-bottom: 6px;
@@ -206,7 +205,7 @@ form label {
   font-size: 14px;
 }
 
-/* Input fields and textarea */
+
 form input,
 form textarea {
   width: 100%;
@@ -218,7 +217,7 @@ form textarea {
   transition: border-color 0.3s ease;
 }
 
-/* Focus effect */
+
 form input:focus,
 form textarea:focus {
   outline: none;
@@ -226,7 +225,6 @@ form textarea:focus {
   box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
 }
 
-/* Button */
 form button {
   width: 100%;
   padding: 12px;
@@ -240,12 +238,11 @@ form button {
   transition: background 0.3s ease;
 }
 
-/* Button hover */
 form button:hover {
   background: #357ab8;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   form {
     margin: 20px;
@@ -255,6 +252,7 @@ form button:hover {
 
 
 
+ */
 
 
 
@@ -266,31 +264,6 @@ form button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-   Footer Styles
-========================= */
 .footer {
   background: #111;
   color: #fff;
@@ -397,7 +370,7 @@ form button:hover {
   color: #aaa;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -418,3 +391,91 @@ form button:hover {
     margin-top: 15px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Form Card Container */
+    form {
+      max-width: 280px;
+      margin: 20px auto;
+      padding: 14px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 128, 0, 0.2);
+      font-family: Arial, sans-serif;
+      margin-top: 130px;
+    }
+
+    /* Labels */
+    form label {
+      display: block;
+      margin-bottom: 4px;
+      font-weight: bold;
+      font-size: 12px;
+      color: #333;
+    }
+
+    /* Inputs & Textarea */
+    form input,
+    form textarea {
+      width: 100%;
+      height: 34px;              /* ✅ makes text visible */
+      padding: 6px 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 13px;
+      line-height: 1.4;
+      outline: none;
+      box-sizing: border-box;    /* ✅ prevents collapse */
+      transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Textarea */
+    form textarea {
+      height: auto;
+      min-height: 70px;
+      resize: vertical;
+    }
+
+    /* Button */
+    form button {
+      width: 100%;
+      padding: 8px;
+      background: #28a745;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #218838;
+    }
+  
